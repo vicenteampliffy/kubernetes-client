@@ -20,7 +20,7 @@ class SerializationTest extends TestCase
     /** @var  SerializerInterface */
     private $serializer;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->serializer = SerializerBuilder::create()
             ->addMetadataDir(__DIR__.'/../../../src/Resources/serializer', 'Kubernetes\Client')
